@@ -1,8 +1,13 @@
 {
 	"name": "@vew/hono-core",
 	"version": "0.1.0",
-	"exports": "./mod.ts",
 	"type": "module",
+	"exports": {
+		"./utils": "./src/utils",
+		"./constants": "./src/constants",
+		"./helpers": "./src/helpers",
+		"./middlewares": "./src/middlewares"
+	},
 	"scripts": {
 		"check": "bunx biome check --write ."
 	},
